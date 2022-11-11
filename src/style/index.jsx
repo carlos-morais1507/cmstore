@@ -1,6 +1,5 @@
-import { blue } from "@radix-ui/colors";
-import { gray } from "@radix-ui/colors/types/dark/gray";
-import { createStitches, css } from "@stitches/react";
+import { blue, gray } from "@radix-ui/colors";
+import { createStitches, css, globalCss } from "@stitches/react";
 
 export const appTheme = createStitches({
     theme:{
@@ -9,7 +8,7 @@ export const appTheme = createStitches({
             ...gray,
 
             background: '$blue1',
-            hederbg: '$blue9',
+            headerbg: '$blue9',
 
             lctext: '$gray11',
             hctext: '$gray12',
@@ -57,4 +56,24 @@ export const appTheme = createStitches({
             8: '48px'
         },
     }
+});
+
+export const globalStyles = globalCss({
+    '*': { fontFamily: 'Lato' },
+  });
+
+export const header = css({
+    backgroundColor: '$headerbg',
+
+    color: '$background',
+    fontSize: '$4',
+
+    width: '100%',
+    height: 100,
+
+    position: 'fixed',
+
+    display: 'flex',
+    justifyContent: 'space-around',
+    alignItems: 'center',
 });

@@ -1,6 +1,9 @@
+import { header } from "../../style";
+
+
 export function Header() {
     return(
-        <div>
+        <div className={header()} >
             <div>
                 Logo
             </div>
@@ -11,3 +14,4 @@ export function Header() {
         </div>
     );
 }
+
