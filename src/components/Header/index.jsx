@@ -1,17 +1,18 @@
-import { header } from "../../style";
+import { header, headerBtn} from "../../style";
 
 
 export function Header() {
-    return(
-        <div className={header()} >
-            <div>
-                Logo
-            </div>
-            <div>
-                <button>User</button>
-                <button>Cart</button>
-            </div>
+    return(   
+    <div className={header()} >
+        <div>
+            Logo
         </div>
+        <div>
+            <button className={headerBtn()} >User</button>
+            <button className={headerBtn()} >Cart</button>
+        </div>
+    </div>
+        
     );
 }
 

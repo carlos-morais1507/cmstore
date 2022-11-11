@@ -77,3 +77,16 @@ export const header = css({
     justifyContent: 'space-around',
     alignItems: 'center',
 });
+
+export const headerBtn = css({
+    margin: '$2',
+    padding: '$2',
+
+    backgroundColor: '$blue2',
+    color: '$hctext',
+
+    fontWeight: 500,
+
+    border: 'none',
+    borderRadius: '$round',
+});
